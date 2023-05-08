@@ -25,10 +25,14 @@ function play() {
   var selectedValue = selected.options[selected.selectedIndex].value;
   console.log(selectedValue);
   if (selectedValue == "party-horn") {
-    console.log("here");
-    const JSConfetti = new JSConfetti();
-    jsConfetti.addConfetti();
+    confetti();
   }
+}
+
+function confetti() {
+  console.log("here");
+  const jsConfetti = new JSConfetti();
+  jsConfetti.addConfetti();
 }
 
 function volume() {
